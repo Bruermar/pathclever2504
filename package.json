@@ -27,8 +27,7 @@
     "npm": "6.12.1"
   },
   "scripts": {
-    "build": "tsc --project server/tsconfig.json && ng build",
-    "install": "npm run build",
+    "install": "tsc --project server/tsconfig.json && ng build",
     "start": "node server/server.js",
     "test": "ng test",
     "lint": "tslint --project .",
