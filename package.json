@@ -27,9 +27,9 @@
     "npm": "6.12.1"
   },
   "scripts": {
-    "prestart": "tsc --project server/tsconfig.json && ng build",
+    "build": "tsc --project server/tsconfig.json && ng build",
+    "install": "npm run build",
     "start": "node server/server.js",
-    "build": "npm run lint && ng build",
     "test": "ng test",
     "lint": "tslint --project .",
     "e2e": "ng e2e"
