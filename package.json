@@ -27,7 +27,8 @@
     "npm": "6.12.1"
   },
   "scripts": {
-    "start": "tsc --project server/tsconfig.json && concurrently \"ng serve\" \"nodemon server/server.js\"",
+    "prestart": "tsc --project server/tsconfig.json && ng build",
+    "start": "node server/server.js",
     "build": "npm run lint && ng build",
     "test": "ng test",
     "lint": "tslint --project .",
